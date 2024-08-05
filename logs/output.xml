@@ -1,23 +1,122 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.11.2 on win32)" generated="2024-08-04T18:52:38.481709" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.11.2 on win32)" generated="2024-08-05T16:04:55.411804" rpa="false" schemaversion="5">
 <suite id="s1" name="TestSuiteBlogAgi" source="D:\ProvaAgi\BlogdoAgi\blogdoagi\Tests\Tasks\TestSuiteBlogAgi.robot">
-<test id="s1-t1" name="Acessar a pagina do blog Agi" line="7">
-<status status="FAIL" start="2024-08-04T18:52:38.559712" elapsed="0.001000">Test cannot be empty.</status>
+<test id="s1-t1" name="Acessar o blog Agi" line="9">
+<kw name="Acessar a pagina do blog Agi" owner="RecBlogAgi">
+<kw name="New Browser" owner="Browser">
+<msg time="2024-08-05T16:04:58.576642" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "D:\\ProvaAgi\\BlogdoAgi\\blogdoagi\\logs\\browser\\traces\\d327c241-15f3-405e-9414-eabd6c9b4da7"}</msg>
+<msg time="2024-08-05T16:05:03.420788" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"D:\\ProvaAgi\\BlogdoAgi\\blogdoagi\\logs\\browser\\traces\\d327c241-15f3-405e-9414-eabd6c9b4da7"}</msg>
+<arg>browser=${BROWSER}</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2024-08-05T16:04:58.574643" elapsed="4.846145"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2024-08-05T16:05:11.639373" level="INFO">Successfully initialized new page object and opened url: https://blogdoagi.com.br/</msg>
+<msg time="2024-08-05T16:05:11.640374" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2024-08-05T16:05:03.421788" elapsed="8.218586"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-08-05T16:05:11.642379" level="INFO">${titulo} = css=title</msg>
+<var>${titulo}</var>
+<arg>css=title</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-08-05T16:05:11.641370" elapsed="0.001009"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>15</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-08-05T16:05:11.643374" elapsed="0.000999"/>
+</kw>
+<kw name="Get Title" owner="Browser">
+<msg time="2024-08-05T16:05:11.689369" level="INFO">Title: 'Blog do Agi | Tudo sobre empréstimo e educação financeira'</msg>
+<arg>equal</arg>
+<arg>Blog do Agi | Tudo sobre empréstimo e educação financeira</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2024-08-05T16:05:11.645373" elapsed="0.045000"/>
+</kw>
+<status status="PASS" start="2024-08-05T16:04:58.571643" elapsed="13.118730"/>
+</kw>
+<kw name="Pesquisar por uma artigo &quot;LGPD&quot;" owner="RecBlogAgi">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2024-08-05T16:05:11.828368" level="INFO">Waited for Element with selector css=div.ast-builder-layout-element:nth-child(2) at state visible</msg>
+<arg>${BOTAOPESQUISAR}</arg>
+<arg>visible</arg>
+<arg>15</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2024-08-05T16:05:11.720380" elapsed="0.107988"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-08-05T16:05:11.830364" level="INFO">Clicks the element 'css=div.ast-builder-layout-element:nth-child(2)'.</msg>
+<arg>css=div.ast-builder-layout-element:nth-child(2)</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-08-05T16:05:11.829370" elapsed="0.113002"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-05T16:05:16.944681" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-05T16:05:11.943372" elapsed="5.001309"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2024-08-05T16:05:16.949731" level="INFO">Fills the text 'LGPD' in the given field.</msg>
+<arg>css=input[placeholder="Search..."]</arg>
+<arg>LGPD</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-08-05T16:05:16.946715" elapsed="0.074986"/>
+</kw>
+<kw name="Press Keys" owner="Browser">
+<arg>css=input[placeholder="Search..."]</arg>
+<arg>Enter</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given key combination into element found by ``selector``.</doc>
+<status status="PASS" start="2024-08-05T16:05:17.021701" elapsed="1.152956"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-05T16:05:28.176781" level="INFO">Slept 10 seconds.</msg>
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-05T16:05:18.175659" elapsed="10.001122"/>
+</kw>
+<status status="PASS" start="2024-08-05T16:05:11.719369" elapsed="16.457412"/>
+</kw>
+<kw name="Take Screenshot" owner="Browser" type="TEARDOWN">
+<msg time="2024-08-05T16:05:28.417353" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<status status="PASS" start="2024-08-05T16:05:28.177779" elapsed="0.240698"/>
+</kw>
+<status status="PASS" start="2024-08-05T16:04:58.561648" elapsed="29.857851"/>
 </test>
-<doc>acessar a pagina de login</doc>
-<status status="FAIL" start="2024-08-04T18:52:38.484715" elapsed="0.078998"/>
+<doc>acessar a pagina do Blog AGI</doc>
+<status status="PASS" start="2024-08-05T16:04:55.415798" elapsed="33.205702"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="TestSuiteBlogAgi">TestSuiteBlogAgi</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="TestSuiteBlogAgi">TestSuiteBlogAgi</stat>
 </suite>
 </statistics>
 <errors>
-<msg time="2024-08-04T18:52:38.553711" level="ERROR">Error in file 'D:\ProvaAgi\BlogdoAgi\blogdoagi\Resources\RecBlogAgi.resource' on line 3: Non-existing setting 'Library Browser'.</msg>
 </errors>
 </robot>

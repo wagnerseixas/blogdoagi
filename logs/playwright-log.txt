@@ -1,0 +1,59 @@
+{"level":30,"time":"2024-08-05T19:04:58.079Z","pid":17008,"hostname":"Wagner","msg":"Listening on 63392"}
+(node:17008) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2024-08-05T19:04:58.556Z","pid":17008,"hostname":"Wagner","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-08-05T19:04:58.558Z","pid":17008,"hostname":"Wagner","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-08-05T19:04:58.566Z","pid":17008,"hostname":"Wagner","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-08-05T19:04:58.567Z","pid":17008,"hostname":"Wagner","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-08-05T19:04:58.580Z","pid":17008,"hostname":"Wagner","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2024-08-05T19:05:03.415Z","pid":17008,"hostname":"Wagner","msg":"Adding browser to stack: chromium, version: 127.0.6533.17"}
+{"level":30,"time":"2024-08-05T19:05:03.417Z","pid":17008,"hostname":"Wagner","msg":"End of node method newBrowser"}
+{"level":30,"time":"2024-08-05T19:05:03.417Z","pid":17008,"hostname":"Wagner","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2024-08-05T19:05:03.429Z","pid":17008,"hostname":"Wagner","msg":"Start of node method newPage"}
+{"level":30,"time":"2024-08-05T19:05:03.430Z","pid":17008,"hostname":"Wagner","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-08-05T19:05:03.474Z","pid":17008,"hostname":"Wagner","msg":"Changed active context"}
+{"level":30,"time":"2024-08-05T19:05:04.461Z","pid":17008,"hostname":"Wagner","msg":"Video path: undefined"}
+{"level":30,"time":"2024-08-05T19:05:04.461Z","pid":17008,"hostname":"Wagner","msg":"Changed active page"}
+{"level":30,"time":"2024-08-05T19:05:11.633Z","pid":17008,"hostname":"Wagner","msg":"End of node method newPage"}
+{"level":30,"time":"2024-08-05T19:05:11.731Z","pid":17008,"hostname":"Wagner","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2024-08-05T19:05:11.732Z","pid":17008,"hostname":"Wagner","msg":"Strict mode is enabled, find Locator with css=div.ast-builder-layout-element:nth-child(2) in page."}
+{"level":30,"time":"2024-08-05T19:05:11.824Z","pid":17008,"hostname":"Wagner","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2024-08-05T19:05:11.832Z","pid":17008,"hostname":"Wagner","msg":"Start of node method click"}
+{"level":30,"time":"2024-08-05T19:05:11.833Z","pid":17008,"hostname":"Wagner","msg":"Strict mode is enabled, find Locator with css=div.ast-builder-layout-element:nth-child(2) in page."}
+{"level":30,"time":"2024-08-05T19:05:11.939Z","pid":17008,"hostname":"Wagner","msg":"End of node method click"}
+{"level":30,"time":"2024-08-05T19:05:16.963Z","pid":17008,"hostname":"Wagner","msg":"Start of node method fillText"}
+{"level":30,"time":"2024-08-05T19:05:16.965Z","pid":17008,"hostname":"Wagner","msg":"Strict mode is enabled, find Locator with css=input[placeholder=\"Search...\"] in page."}
+{"level":30,"time":"2024-08-05T19:05:17.017Z","pid":17008,"hostname":"Wagner","msg":"End of node method fillText"}
+{"level":30,"time":"2024-08-05T19:05:17.027Z","pid":17008,"hostname":"Wagner","msg":"Start of node method press"}
+{"level":30,"time":"2024-08-05T19:05:17.028Z","pid":17008,"hostname":"Wagner","msg":"Strict mode is enabled, find Locator with css=input[placeholder=\"Search...\"] in page."}
+{"level":30,"time":"2024-08-05T19:05:18.169Z","pid":17008,"hostname":"Wagner","msg":"End of node method press"}
+{"level":30,"time":"2024-08-05T19:05:28.183Z","pid":17008,"hostname":"Wagner","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2024-08-05T19:05:28.184Z","pid":17008,"hostname":"Wagner","Take screenshot with options: ":{"path":"D:\\ProvaAgi\\BlogdoAgi\\blogdoagi\\logs\\browser\\screenshot\\robotframework-browser-screenshot-1.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2024-08-05T19:05:28.412Z","pid":17008,"hostname":"Wagner","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2024-08-05T19:05:28.434Z","pid":17008,"hostname":"Wagner","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-08-05T19:05:28.441Z","pid":17008,"hostname":"Wagner","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-08-05T19:05:28.447Z","pid":17008,"hostname":"Wagner","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-08-05T19:05:28.453Z","pid":17008,"hostname":"Wagner","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-08-05T19:05:28.458Z","pid":17008,"hostname":"Wagner","msg":"Changed active context"}
+{"level":30,"time":"2024-08-05T19:05:28.458Z","pid":17008,"hostname":"Wagner","msg":"Changing current active page: page=a7561a9c-077e-48fd-80a7-c7e4b36d0d2c"}
+{"level":30,"time":"2024-08-05T19:05:28.458Z","pid":17008,"hostname":"Wagner","msg":"Changed active page"}
+{"level":30,"time":"2024-08-05T19:05:28.467Z","pid":17008,"hostname":"Wagner","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-08-05T19:05:28.472Z","pid":17008,"hostname":"Wagner","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-08-05T19:05:28.478Z","pid":17008,"hostname":"Wagner","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2024-08-05T19:05:28.480Z","pid":17008,"hostname":"Wagner","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2024-08-05T19:05:28.487Z","pid":17008,"hostname":"Wagner","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2024-08-05T19:05:28.488Z","pid":17008,"hostname":"Wagner","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2024-08-05T19:05:28.495Z","pid":17008,"hostname":"Wagner","msg":"Changing current active page: page=a7561a9c-077e-48fd-80a7-c7e4b36d0d2c"}
+{"level":30,"time":"2024-08-05T19:05:28.495Z","pid":17008,"hostname":"Wagner","msg":"Changed active page"}
+{"level":30,"time":"2024-08-05T19:05:28.504Z","pid":17008,"hostname":"Wagner","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-08-05T19:05:28.508Z","pid":17008,"hostname":"Wagner","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-08-05T19:05:28.513Z","pid":17008,"hostname":"Wagner","msg":"Changed active context"}
+{"level":30,"time":"2024-08-05T19:05:28.513Z","pid":17008,"hostname":"Wagner","msg":"Changing current active page: page=a7561a9c-077e-48fd-80a7-c7e4b36d0d2c"}
+{"level":30,"time":"2024-08-05T19:05:28.513Z","pid":17008,"hostname":"Wagner","msg":"Changed active page"}
+{"level":30,"time":"2024-08-05T19:05:28.518Z","pid":17008,"hostname":"Wagner","msg":"Start of node method closeContext"}
+{"level":30,"time":"2024-08-05T19:05:28.548Z","pid":17008,"hostname":"Wagner","msg":"Removed page=4d6815ab-5176-4431-b2a8-1642fa083f9c from context=12eb0690-7993-4e7e-8f62-61c277600985 page stack"}
+{"level":30,"time":"2024-08-05T19:05:28.608Z","pid":17008,"hostname":"Wagner","msg":"End of node method closeContext"}
+{"level":30,"time":"2024-08-05T19:05:28.631Z","pid":17008,"hostname":"Wagner","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-08-05T19:05:28.631Z","pid":17008,"hostname":"Wagner","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-08-05T19:05:29.158Z","pid":17008,"hostname":"Wagner","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2024-08-05T19:05:39.217Z","pid":17008,"hostname":"Wagner","msg":"End of node method closeAllBrowsers"}
