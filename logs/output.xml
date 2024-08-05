@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.11.2 on win32)" generated="2024-08-04T18:52:38.481709" rpa="false" schemaversion="5">
+<suite id="s1" name="TestSuiteBlogAgi" source="D:\ProvaAgi\BlogdoAgi\blogdoagi\Tests\Tasks\TestSuiteBlogAgi.robot">
+<test id="s1-t1" name="Acessar a pagina do blog Agi" line="7">
+<status status="FAIL" start="2024-08-04T18:52:38.559712" elapsed="0.001000">Test cannot be empty.</status>
+</test>
+<doc>acessar a pagina de login</doc>
+<status status="FAIL" start="2024-08-04T18:52:38.484715" elapsed="0.078998"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="TestSuiteBlogAgi">TestSuiteBlogAgi</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-08-04T18:52:38.553711" level="ERROR">Error in file 'D:\ProvaAgi\BlogdoAgi\blogdoagi\Resources\RecBlogAgi.resource' on line 3: Non-existing setting 'Library Browser'.</msg>
+</errors>
+</robot>
