@@ -47,7 +47,7 @@ jobs:
       uses: actions/upload-artifact@v4.3.5
       if: always()
       with:
-        name: Relatorio Tests
+        name: Relatorio Chromium
         path: logs
   Firefox :
 
@@ -86,6 +86,6 @@ jobs:
       uses: actions/upload-artifact@v4.3.5
       if: always()
       with:
-        name: Relatorio Tests
+        name: Relatorio Firefox
         path: logs
 
