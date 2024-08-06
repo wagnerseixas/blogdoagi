@@ -37,4 +37,9 @@ jobs:
       run: rfbrowser init
     - name: Rodando o Robot E2E
       run: robot -d logs/ Tests/Tasks/TestSuiteBlogAgi.robot 
+    - name: Relatorio no Actions
+      uses: joonvena/robotframework-reporter-action@v2.4
+      with:
+        gh_access_token: ${{ secrects.GITHUB_TOKEN}}
+        report_path: /logs
 
