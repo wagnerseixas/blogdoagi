@@ -19,7 +19,7 @@ ${ELEMENTO-RESULTADO-ENCONTRADO}        css=h2.entry-title.ast-blog-single-eleme
 *** keywords ***
 Acessar a pagina do blog Agi 
     #Open Browser        url=${URL}        browser=${BROWSER}
-    New Browser    browser=${BROWSER}    headless=False
+    New Browser    browser=${BROWSER}    headless=True
     New Page    ${URL}
    ${titulo}    Set variable    css=title
    

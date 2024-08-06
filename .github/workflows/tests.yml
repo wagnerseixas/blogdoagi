@@ -35,4 +35,6 @@ jobs:
         pip install robotframework-browser
     - name: Browser init
       run: rfbrowser init
+    - name: Rodando o Robot E2E
+      run: robot -d logs/ Tests/Tasks/TestSuiteBlogAgi.robot 
 
