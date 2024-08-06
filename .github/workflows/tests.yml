@@ -5,9 +5,11 @@ name: E2E TestAgi
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "develop" ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "develop" ]
+  workflow_dispatch:
+  
 
 jobs:
   Chromium :
