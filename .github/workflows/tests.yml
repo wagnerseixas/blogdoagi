@@ -40,6 +40,6 @@ jobs:
     - name: Relatorio no Actions
       uses: joonvena/robotframework-reporter-action@v2.4
       with:
-        gh_access_token: ${{ secrects.GITHUB_TOKEN}}
+        gh_access_token: ${{ secrets.GITHUB_TOKEN}}
         report_path: /logs
 
