@@ -4,7 +4,7 @@ Automacao com RobotFramework do Blog Agi e GitActions-CI
 URL do Site automatizado:
 https://blogdoagi.com.br/
 
-### Project Report using Git Actions:  
+## Acessando o relatório de execucao usando - Git Actions:  
 
 
 No GitHub acesse o link abaixo, para rodar a PIPELINE[WorkFlow]:  
@@ -12,21 +12,21 @@ https://github.com/wagnerseixas/blogdoagi/actions/workflows/tests.yml
 
 - run workflow
 
-### WorkFlow de Exec
+## WorkFlow de Exec
 
-## Exibindo a tela inicial com os browser que foram executados
+### Exibindo a tela inicial com os browser que foram executados
 <div align="left">
     <img width="375x462" title="Arquitetura do Projeto" src="workflowAction1.PNG"/>
 <div>
 
 
-## Exibindo a tela com execucao dos testes no browser especifico
+### Exibindo a tela com execucao dos testes no browser especifico
 <div align="left">
     <img width="375x462" title="Arquitetura do Projeto" src="workflowAction2.PNG"/>
 <div>
 
 
-## Exibindo a tela com os artefactos[relatório por browsser] de exec para Download
+### Exibindo a tela com os artefactos[relatório por browsser] de exec para Download
 <div align="left">
     <img width="375x462" title="Arquitetura do Projeto" src="workflowAction3.PNG"/>
 <div>
