@@ -12,7 +12,8 @@ https://github.com/wagnerseixas/blogdoagi/actions/workflows/tests.yml
 
 - run workflow
 
-### Precondicoes para rodar os testes:
+### Pre condicoes para rodar o projeto de testes em Robot:
+```
 1. Instalacao do Python 3.11, o mesmo deve estar setado na variavel de ambiente do SO.  
 https://www.python.org/downloads/release/python-3110/
 
@@ -22,28 +23,30 @@ https://nodejs.org/en/download
 ** Note: Para que o o RobotFramework rode corretamente com o Python, algumas biblioteca precisam ser instaladas
 
 3. Install Libraries:
-````
+
 pip install robotframework
 pip install robotframework-browser
-
-````
 
 4. Inicializar as library da biblioteca do Browser:
 > rfbrowser init
 
-A versao do robot utilizada é 7.0.
-
-Como executar o projeto local:
 ```
- Crie uma pasta mkdir pastaprojeto
- Cd pastaprojeto
- git clone https://github.com/wagnerseixas/blogdoagi.git
- cd blogagi   
- pip install robotframework
- pip install robotframework-browser
- rfbrowser init
-  robot -d logs/ Tests/Tasks/TestSuiteBlogAgi.robot
-  Acesse os relatórios : ..\blogdoagi\logs
+
+### A versao do robot utilizada é 7.0.
+
+### procedimento para axecutar o projeto local
+```
+- [] Crie uma pasta mkdir pastaprojeto - CMD
+- []Cd pastaprojeto
+- [] git clone https://github.com/wagnerseixas/blogdoagi.git
+- [] cd blogagi   
+- [] pip install robotframework
+- [] pip install robotframework-browser
+- [] rfbrowser init
+- [] npm init playwright@latest
+- [] npx playwright install --with-deps
+- [] robot -d logs/ Tests/Tasks/TestSuiteBlogAgi.robot
+- [] Acesse os relatórios : ..\blogdoagi\logs
 ```
 
 ============================
@@ -51,7 +54,9 @@ Como executar o projeto local:
 
 ### Uma estrutura básica do projeto.
 
-
+<div align="center">
+    <img width="375x462" title="Arquitetura do Projeto" src="ArquiteturaProj1.PNG"/>
+<div>
 
 References:      
 robotframework:  
