@@ -9,6 +9,7 @@ https://blogdoagi.com.br/
 
 No GitHub acesse o link abaixo, para rodar a PIPELINE[WorkFlow]:  
 https://github.com/wagnerseixas/blogdoagi/actions/workflows/tests.yml
+= run workflow
 
 ### Precondicoes para rodar os testes:
 1. Instalacao do Python 3.11, o mesmo deve estar setado na variavel de ambiente do SO.  
