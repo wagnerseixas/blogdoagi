@@ -1,79 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.11.2 on win32)" generated="2024-08-06T09:25:50.093757" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.11.2 on win32)" generated="2024-08-07T16:25:40.130017" rpa="false" schemaversion="5">
 <suite id="s1" name="TestSuiteBlogAgi" source="D:\ProvaAgi\BlogdoAgi\blogdoagi\Tests\Tasks\TestSuiteBlogAgi.robot">
 <test id="s1-t1" name="Acessar o blog Agi" line="10">
 <kw name="Acessar a pagina do blog Agi" owner="RecBlogAgi" type="SETUP">
 <kw name="New Browser" owner="Browser">
-<msg time="2024-08-06T09:26:07.767451" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "D:\\ProvaAgi\\BlogdoAgi\\blogdoagi\\logs\\browser\\traces\\435ff1ca-1f2f-433e-97b9-1d5c54334898"}</msg>
-<msg time="2024-08-06T09:26:12.496719" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"D:\\ProvaAgi\\BlogdoAgi\\blogdoagi\\logs\\browser\\traces\\435ff1ca-1f2f-433e-97b9-1d5c54334898"}</msg>
+<msg time="2024-08-07T16:26:00.520776" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "D:\\ProvaAgi\\BlogdoAgi\\blogdoagi\\logs\\browser\\traces\\d52a51c3-70b0-4290-b935-2d81ca1dde1c"}</msg>
+<msg time="2024-08-07T16:26:04.994297" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"D:\\ProvaAgi\\BlogdoAgi\\blogdoagi\\logs\\browser\\traces\\d52a51c3-70b0-4290-b935-2d81ca1dde1c"}</msg>
 <arg>browser=${BROWSER}</arg>
-<arg>headless=True</arg>
+<arg>headless=False</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2024-08-06T09:26:07.765446" elapsed="4.731273"/>
+<status status="PASS" start="2024-08-07T16:26:00.518776" elapsed="4.475521"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2024-08-06T09:26:20.370075" level="INFO">Successfully initialized new page object and opened url: https://blogdoagi.com.br/</msg>
-<msg time="2024-08-06T09:26:20.370075" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<msg time="2024-08-07T16:26:16.854788" level="INFO">Successfully initialized new page object and opened url: https://blogdoagi.com.br/</msg>
+<msg time="2024-08-07T16:26:16.854788" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
 <arg>${URL}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2024-08-06T09:26:12.497725" elapsed="7.873350"/>
+<status status="PASS" start="2024-08-07T16:26:04.995300" elapsed="11.860488"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-08-06T09:26:20.371075" level="INFO">${titulo} = css=title</msg>
+<msg time="2024-08-07T16:26:16.857797" level="INFO">${titulo} = css=title</msg>
 <var>${titulo}</var>
 <arg>css=title</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-08-06T09:26:20.371075" elapsed="0.001005"/>
+<status status="PASS" start="2024-08-07T16:26:16.856784" elapsed="0.001013"/>
 </kw>
 <kw name="Get Title" owner="Browser">
-<msg time="2024-08-06T09:26:20.391082" level="INFO">Title: 'Blog do Agi | Tudo sobre empréstimo e educação financeira'</msg>
+<msg time="2024-08-07T16:26:17.064782" level="INFO">Title: 'Blog do Agi | Tudo sobre empréstimo e educação financeira'</msg>
 <arg>equal</arg>
 <arg>Blog do Agi | Tudo sobre empréstimo e educação financeira</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the title of the current page.</doc>
-<status status="PASS" start="2024-08-06T09:26:20.372080" elapsed="0.019002"/>
+<status status="PASS" start="2024-08-07T16:26:16.858785" elapsed="0.207005"/>
 </kw>
-<status status="PASS" start="2024-08-06T09:26:07.763450" elapsed="12.628628"/>
+<status status="PASS" start="2024-08-07T16:26:00.517779" elapsed="16.548011"/>
 </kw>
 <kw name="Pesquisar por uma artigo &quot;LGPD&quot;" owner="RecBlogAgi" source_name="Pesquisar por uma artigo &quot;${PesquisarPor}&quot;">
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2024-08-06T09:26:20.470090" level="INFO">Waited for Element with selector css=div.ast-builder-layout-element:nth-child(2) at state visible</msg>
+<msg time="2024-08-07T16:26:17.199780" level="INFO">Waited for Element with selector css=div.ast-builder-layout-element:nth-child(2) at state visible</msg>
 <arg>${BOTAOPESQUISAR}</arg>
 <arg>visible</arg>
 <arg>15</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2024-08-06T09:26:20.395078" elapsed="0.075012"/>
+<status status="PASS" start="2024-08-07T16:26:17.070788" elapsed="0.129996"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2024-08-06T09:26:20.471089" level="INFO">Clicks the element 'css=div.ast-builder-layout-element:nth-child(2)'.</msg>
+<msg time="2024-08-07T16:26:17.201780" level="INFO">Clicks the element 'css=div.ast-builder-layout-element:nth-child(2)'.</msg>
 <arg>css=div.ast-builder-layout-element:nth-child(2)</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2024-08-06T09:26:20.470090" elapsed="0.093050"/>
+<status status="PASS" start="2024-08-07T16:26:17.200784" elapsed="0.104998"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-08-06T09:26:25.564677" level="INFO">Slept 5 seconds.</msg>
+<msg time="2024-08-07T16:26:22.306998" level="INFO">Slept 5 seconds.</msg>
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-08-06T09:26:20.564143" elapsed="5.000534"/>
+<status status="PASS" start="2024-08-07T16:26:17.305782" elapsed="5.001216"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2024-08-06T09:26:25.567667" level="INFO">Fills the text 'LGPD' in the given field.</msg>
+<msg time="2024-08-07T16:26:22.307964" level="INFO">Fills the text 'LGPD' in the given field.</msg>
 <arg>css=input[placeholder="Search..."]</arg>
 <arg>${PesquisarPor}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2024-08-06T09:26:25.565671" elapsed="0.059534"/>
+<status status="PASS" start="2024-08-07T16:26:22.306998" elapsed="0.061452"/>
 </kw>
 <kw name="Press Keys" owner="Browser">
 <arg>css=input[placeholder="Search..."]</arg>
@@ -81,19 +81,19 @@
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Types the given key combination into element found by ``selector``.</doc>
-<status status="PASS" start="2024-08-06T09:26:25.626211" elapsed="1.225308"/>
+<status status="PASS" start="2024-08-07T16:26:22.368450" elapsed="0.252268"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-08-06T09:26:36.852851" level="INFO">Slept 10 seconds.</msg>
+<msg time="2024-08-07T16:26:32.624546" level="INFO">Slept 10 seconds.</msg>
 <arg>10s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-08-06T09:26:26.852521" elapsed="10.000330"/>
+<status status="PASS" start="2024-08-07T16:26:22.621718" elapsed="10.002828"/>
 </kw>
-<status status="PASS" start="2024-08-06T09:26:20.393077" elapsed="16.459774"/>
+<status status="PASS" start="2024-08-07T16:26:17.068785" elapsed="15.555761"/>
 </kw>
 <kw name="Validar o resultado esperado &quot;Open banking: o poder na mão do cliente&quot;" owner="RecBlogAgi" source_name="Validar o resultado esperado &quot;${RESULTADO-ESPERADO}&quot;">
 <kw name="Get Text" owner="Browser">
-<msg time="2024-08-06T09:26:36.947867" level="INFO">Text: 'Open banking: o poder na mão do cliente'</msg>
+<msg time="2024-08-07T16:26:32.731121" level="INFO">Text: 'Open banking: o poder na mão do cliente'</msg>
 <arg>${ELEMENTO-RESULTADO-ENCONTRADO}</arg>
 <arg>equal</arg>
 <arg>${RESULTADO-ESPERADO}</arg>
@@ -101,29 +101,142 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-08-06T09:26:36.854855" elapsed="0.094010"/>
+<status status="PASS" start="2024-08-07T16:26:32.628255" elapsed="0.102866"/>
 </kw>
-<status status="PASS" start="2024-08-06T09:26:36.853852" elapsed="0.095013"/>
+<status status="PASS" start="2024-08-07T16:26:32.627742" elapsed="0.103379"/>
 </kw>
 <kw name="Take Screenshot" owner="Browser" type="TEARDOWN">
-<msg time="2024-08-06T09:26:37.119885" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2024-08-07T16:26:32.962828" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
 <tag>PageContent</tag>
 <doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<status status="PASS" start="2024-08-06T09:26:36.949863" elapsed="0.171019"/>
+<status status="PASS" start="2024-08-07T16:26:32.732124" elapsed="0.230704"/>
 </kw>
-<status status="PASS" start="2024-08-06T09:26:07.757448" elapsed="29.363434"/>
+<status status="PASS" start="2024-08-07T16:26:00.510280" elapsed="32.453542"/>
+</test>
+<test id="s1-t2" name="Pesquisar por um arigo que nao existe" line="15">
+<kw name="Acessar a pagina do blog Agi" owner="RecBlogAgi" type="SETUP">
+<kw name="New Browser" owner="Browser">
+<msg time="2024-08-07T16:26:33.154291" level="INFO">Switching browser to browser=70549f83-e2bb-456b-9a79-d1aeb1ed6935</msg>
+<msg time="2024-08-07T16:26:33.160290" level="INFO">Successfully changed active browser: browser=70549f83-e2bb-456b-9a79-d1aeb1ed6935</msg>
+<msg time="2024-08-07T16:26:33.160290" level="INFO">Reusing existing browser with id: browser=70549f83-e2bb-456b-9a79-d1aeb1ed6935</msg>
+<arg>browser=${BROWSER}</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2024-08-07T16:26:33.152292" elapsed="0.007998"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2024-08-07T16:26:38.783752" level="INFO">Successfully initialized new page object and opened url: https://blogdoagi.com.br/</msg>
+<msg time="2024-08-07T16:26:38.783752" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2024-08-07T16:26:33.161290" elapsed="5.622462"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-08-07T16:26:38.784751" level="INFO">${titulo} = css=title</msg>
+<var>${titulo}</var>
+<arg>css=title</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-08-07T16:26:38.784751" elapsed="0.000000"/>
+</kw>
+<kw name="Get Title" owner="Browser">
+<msg time="2024-08-07T16:26:39.000750" level="INFO">Title: 'Blog do Agi | Tudo sobre empréstimo e educação financeira'</msg>
+<arg>equal</arg>
+<arg>Blog do Agi | Tudo sobre empréstimo e educação financeira</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2024-08-07T16:26:38.785752" elapsed="0.214998"/>
+</kw>
+<status status="PASS" start="2024-08-07T16:26:33.151293" elapsed="5.850462"/>
+</kw>
+<kw name="Pesquisar por uma artigo &quot;Qualidade de Software&quot;" owner="RecBlogAgi" source_name="Pesquisar por uma artigo &quot;${PesquisarPor}&quot;">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2024-08-07T16:26:39.114751" level="INFO">Waited for Element with selector css=div.ast-builder-layout-element:nth-child(2) at state visible</msg>
+<arg>${BOTAOPESQUISAR}</arg>
+<arg>visible</arg>
+<arg>15</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2024-08-07T16:26:39.010763" elapsed="0.103988"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-08-07T16:26:39.116754" level="INFO">Clicks the element 'css=div.ast-builder-layout-element:nth-child(2)'.</msg>
+<arg>css=div.ast-builder-layout-element:nth-child(2)</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-08-07T16:26:39.115755" elapsed="0.097998"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-07T16:26:44.215976" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-07T16:26:39.214751" elapsed="5.001225"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2024-08-07T16:26:44.220005" level="INFO">Fills the text 'Qualidade de Software' in the given field.</msg>
+<arg>css=input[placeholder="Search..."]</arg>
+<arg>${PesquisarPor}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-08-07T16:26:44.216972" elapsed="0.062003"/>
+</kw>
+<kw name="Press Keys" owner="Browser">
+<arg>css=input[placeholder="Search..."]</arg>
+<arg>Enter</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given key combination into element found by ``selector``.</doc>
+<status status="PASS" start="2024-08-07T16:26:44.278975" elapsed="0.210613"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-07T16:26:54.491541" level="INFO">Slept 10 seconds.</msg>
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-07T16:26:44.490592" elapsed="10.000949"/>
+</kw>
+<status status="PASS" start="2024-08-07T16:26:39.009753" elapsed="15.481788"/>
+</kw>
+<kw name="Validar o resultado nao encontrado &quot;Lamentamos, mas nada foi encontrado para sua pesquisa, tente novamente com outras palavras.&quot;" owner="RecBlogAgi" source_name="Validar o resultado nao encontrado &quot;${RESULTADO-ESPERADO}&quot;">
+<kw name="Get Text" owner="Browser">
+<msg time="2024-08-07T16:26:54.578869" level="INFO">Text: 'Lamentamos, mas nada foi encontrado para sua pesquisa, tente novamente com outras palavras.'</msg>
+<arg>${ELEMENTO-RESULTADO-NAOENCONTRADO}</arg>
+<arg>equal</arg>
+<arg>${RESULTADO-ESPERADO}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-08-07T16:26:54.493539" elapsed="0.085845"/>
+</kw>
+<status status="PASS" start="2024-08-07T16:26:54.493539" elapsed="0.086143"/>
+</kw>
+<kw name="Take Screenshot" owner="Browser" type="TEARDOWN">
+<msg time="2024-08-07T16:26:54.792604" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-2.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-2.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<status status="PASS" start="2024-08-07T16:26:54.580773" elapsed="0.211831"/>
+</kw>
+<status status="PASS" start="2024-08-07T16:26:33.142298" elapsed="21.651864"/>
 </test>
 <doc>acessar a pagina do Blog AGI</doc>
-<status status="PASS" start="2024-08-06T09:25:50.098756" elapsed="47.158139"/>
+<status status="PASS" start="2024-08-07T16:25:40.134026" elapsed="74.834134"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="TestSuiteBlogAgi">TestSuiteBlogAgi</stat>
+<stat pass="2" fail="0" skip="0" id="s1" name="TestSuiteBlogAgi">TestSuiteBlogAgi</stat>
 </suite>
 </statistics>
 <errors>

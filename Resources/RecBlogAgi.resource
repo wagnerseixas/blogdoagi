@@ -15,6 +15,7 @@ ${BROWSER}    chromium
 
 ${BOTAOPESQUISAR}        css=div.ast-builder-layout-element:nth-child(2)
 ${ELEMENTO-RESULTADO-ENCONTRADO}        css=h2.entry-title.ast-blog-single-element >a
+${ELEMENTO-RESULTADO-NAOENCONTRADO}        css=div.page-content > p
 
 *** keywords ***
 Acessar a pagina do blog Agi 
@@ -37,3 +38,5 @@ Pesquisar por uma artigo "${PesquisarPor}"
 
 Validar o resultado esperado "${RESULTADO-ESPERADO}"
     Browser.Get Text        ${ELEMENTO-RESULTADO-ENCONTRADO}     equal    ${RESULTADO-ESPERADO}
+Validar o resultado nao encontrado "${RESULTADO-ESPERADO}"
+    Browser.Get Text        ${ELEMENTO-RESULTADO-NAOENCONTRADO}     equal    ${RESULTADO-ESPERADO}
