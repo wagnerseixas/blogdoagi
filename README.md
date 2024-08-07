@@ -15,19 +15,19 @@ https://github.com/wagnerseixas/blogdoagi/actions/workflows/tests.yml
 ### WorkFlow de Exec
 
 ## Exibindo a tela inicial com os browser que foram executados
-<div align="center">
+<div align="left">
     <img width="375x462" title="Arquitetura do Projeto" src="workflowAction1.PNG"/>
 <div>
 
 
 ## Exibindo a tela com execucao dos testes no browser especifico
-<div align="center">
+<div align="left">
     <img width="375x462" title="Arquitetura do Projeto" src="workflowAction2.PNG"/>
 <div>
 
 
 ## Exibindo a tela com os artefactos[relatório por browsser] de exec para Download
-<div align="center">
+<div align="left">
     <img width="375x462" title="Arquitetura do Projeto" src="workflowAction3.PNG"/>
 <div>
 
@@ -76,7 +76,7 @@ pip install robotframework-browser
 
 ### Uma estrutura básica do projeto.
 
-<div align="center">
+<div align="left">
     <img width="375x462" title="Arquitetura do Projeto" src="ArquiteturaProj1.PNG"/>
 <div>
 
