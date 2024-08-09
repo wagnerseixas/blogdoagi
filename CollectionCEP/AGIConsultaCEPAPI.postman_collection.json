@@ -1,0 +1,244 @@
+{
+	"info": {
+		"_postman_id": "b7eeb00c-655d-450e-a2bf-0a183ae998de",
+		"name": "AGIConsultaCEPAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2489806"
+	},
+	"item": [
+		{
+			"name": "ConsultaCEPJson",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "viacep.com.br/ws/01001000/json/",
+					"host": [
+						"viacep",
+						"com",
+						"br"
+					],
+					"path": [
+						"ws",
+						"01001000",
+						"json",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ConsultaCEPJsonPorUFCidadeRua",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "viacep.com.br/ws/RS/Porto/Domingos/json/ ",
+					"host": [
+						"viacep",
+						"com",
+						"br"
+					],
+					"path": [
+						"ws",
+						"RS",
+						"Porto",
+						"Domingos",
+						"json",
+						" "
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ConsultaCEPJsonPorUFmenos2caracteres",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "viacep.com.br/ws/R/Porto/Domingos/json/ ",
+					"host": [
+						"viacep",
+						"com",
+						"br"
+					],
+					"path": [
+						"ws",
+						"R",
+						"Porto",
+						"Domingos",
+						"json",
+						" "
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ConsultaCEPJsonPorCidadeMenos3caracteres",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "viacep.com.br/ws/RS/PO/Domingos/json/ ",
+					"host": [
+						"viacep",
+						"com",
+						"br"
+					],
+					"path": [
+						"ws",
+						"RS",
+						"PO",
+						"Domingos",
+						"json",
+						" "
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ConsultaCEPJsonPorLogradouroMenos3caracteres",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "viacep.com.br/ws/RS/Porto Alegre/DO/json/ ",
+					"host": [
+						"viacep",
+						"com",
+						"br"
+					],
+					"path": [
+						"ws",
+						"RS",
+						"Porto Alegre",
+						"DO",
+						"json",
+						" "
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ConsultaCEPJsonP",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "viacep.com.br/ws/01001000/json/?callback=callback_name ",
+					"host": [
+						"viacep",
+						"com",
+						"br"
+					],
+					"path": [
+						"ws",
+						"01001000",
+						"json",
+						""
+					],
+					"query": [
+						{
+							"key": "callback",
+							"value": "callback_name "
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ConsultaCEPXML",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "viacep.com.br/ws/01001000/xml/ ",
+					"host": [
+						"viacep",
+						"com",
+						"br"
+					],
+					"path": [
+						"ws",
+						"01001000",
+						"xml",
+						" "
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ConsultaCEPFormatoInvalido",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "viacep.com.br/ws/950100100/json/",
+					"host": [
+						"viacep",
+						"com",
+						"br"
+					],
+					"path": [
+						"ws",
+						"950100100",
+						"json",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ConsultaCEPInvalidoAlfanumerico",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "viacep.com.br/ws/95010A10/json/",
+					"host": [
+						"viacep",
+						"com",
+						"br"
+					],
+					"path": [
+						"ws",
+						"95010A10",
+						"json",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ConsultaCEPValorInexistente",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "viacep.com.br/ws/99999999/json/",
+					"host": [
+						"viacep",
+						"com",
+						"br"
+					],
+					"path": [
+						"ws",
+						"99999999",
+						"json",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

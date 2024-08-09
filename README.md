@@ -59,7 +59,7 @@ pip install robotframework-browser
 ### procedimento para axecutar o projeto local
 ```
 - [] Crie uma pasta mkdir pastaprojeto - CMD
-- []Cd pastaprojeto
+- [] Cd pastaprojeto
 - [] git clone https://github.com/wagnerseixas/blogdoagi.git
 - [] cd blogagi   
 - [] pip install robotframework
